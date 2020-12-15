@@ -25,7 +25,7 @@ A base de dados utilizada no projeto será em arquivo tipo JSON, um formato que 
 
 ## Cenario
 Com base numa string de dados informada pelo usuario numa aplicação Python, desejamos comparar a similaridade com informações armazenadas em uma base e trazer a informaões que melhor representa com maior nivel de acurácia.
-  - Opção 1: Implementar algoritmo de Levenshtein na linguagem Puthon que frequentemente é utilizado para calcular a distância entre duas strings determinando a similaridade enter as palavras.
+  - Opção 1: Implementar algoritmo de Levenshtein na linguagem Python que frequentemente é utilizado para calcular a distância entre duas strings determinando a similaridade enter as palavras.
   - Opção 2: Importar biblioteca FuzzyWuzzy, assim como o pacote Levenshtein, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências.
 
 ### Objetivo
