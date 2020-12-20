@@ -64,7 +64,7 @@ Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele cal
 
 ![alt text](grafico01.png)
 
-![alt text](grafico01.png)
+![alt text](grafico02.png)
 
 
 ### Conclusões
