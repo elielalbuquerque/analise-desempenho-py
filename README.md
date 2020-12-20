@@ -25,14 +25,14 @@ A base de dados utilizada no projeto será em arquivo tipo JSON, um formato que 
 
 ## Cenario
 Com base numa string de dados informada pelo usuario numa aplicação Python, desejamos comparar a similaridade com informações armazenadas em uma base e trazer a informações que melhor representa com maior nível de acurácia.
-  - Opção 1: Implementar algoritmo de Levenshtein na linguagem Python que frequentemente é utilizado para calcular a distância entre duas strings determinando a similaridade enter as palavras.
-  - Opção 2: Importar biblioteca FuzzyWuzzy, assim como o pacote Levenshtein, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências.
+  - Opção 1: Importar biblioteca FuzzyWuzzy, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências.
 
 ### Objetivo
 Comparar o desempenho de uma implementação do algoritmo de Levenshtein com uma biblioteca Fuzzywuzzy para resolver o problema de comparação de similaridade de duas strings com maior nível de assertividade.
   
 # Analise de desempenho
-Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. Basicamente discutiremos sobre desempenho na comparação de strings propostas ao SE.
+Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. 
+Basicamente discutiremos sobre desempenho na comparação de strings propostas ao SE.
 
 Mediremos o número mínimo de edições que você precisa fazer para alterar uma sequência de uma string na outra. A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
 Também é possível calcular a razão de similaridade com base na distância de Levenshtein. Isso pode ser feito usando a seguinte fórmula:
@@ -46,8 +46,8 @@ Onde | a | e | b | são os comprimentos da sequência uma e sequência b respect
 2. Percentual de acurácia.
 
 ### Carga para teste de algoritmo
-- Testaremos cargas de trabalho com string de 5, 10, 20 caracteres para busca numa base de 100 palavras. 
-Os arquivos usados no arquivo estarão armazenados no formato json conforme arquivo [base_dados.json] (Base de dados)
+- Testaremos cargas de trabalho para busca de palavras numa base de 29.870 palavras do dicionario Aurelio. 
+Os arquivos usados no arquivo estarão armazenados no formato json conforme arquivo [Lista-de-Palavras.json] (Lista de Palavras)
 
 ### Performance de metricas
 - Testaremos uma acurácia minima de 95%
@@ -55,6 +55,9 @@ Os arquivos usados no arquivo estarão armazenados no formato json conforme arqu
 
 ### Analise dos algoritmos
 
+| **String de busca** | **Base de palavras**  | **Ratio** | **Acuracia** |
+| -- | -- | --- | --- |
+| ABACAXI|   |    |    |
 
 ### Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
