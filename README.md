@@ -55,9 +55,10 @@ As palavras pesquisadas usados como base estarão armazenados no formato json co
 ### Analise dos algoritmos
 | Algoritmo | Resultado |Similariade | Tempo Min. | Temp Max. | Base pal. |
 | -- | -- | -- | -- | -- | -- | 
-| Ratios | 5 | 90 | -- | -- | 29.87 |
-| Highest | 1 | 95 | -- | -- | 29.87 |
-
+| Ratios | 5 | 90 | -- | -- | 29.870 |
+| Highest | 1 | 95 | -- | -- | 29.870 |
+| Ratios | 5 | 90 | -- | -- | 59.714 |
+| Highest | 1 | 95 | -- | -- | 59.714 |
 
 
 ### Conclusões
