@@ -32,7 +32,7 @@ Comparar o desempenho de uma implementação do algoritmo de Levenshtein com uma
   
 # Analise de desempenho
 Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. 
-Basicamente discutiremos sobre desempenho na comparação de strings propostas ao SE.
+discutiremos sobre desempenho na comparação de strings sob dois aspectos Ratios e Heighest.
 
 Mediremos o número mínimo de edições que você precisa fazer para alterar uma sequência de uma string na outra. A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
 Também é possível calcular a razão de similaridade com base na distância de Levenshtein. Isso pode ser feito usando a seguinte fórmula:
@@ -43,16 +43,18 @@ Onde | a | e | b | são os comprimentos da sequência uma e sequência b respect
 
 ## Definição das métricas de desempenho
 1. Quantidade de edições por inserções, exclusões ou substituições.
-2. Percentual de acurácia.
+2. Percentual de similaridade.
 
 ### Carga para teste de algoritmo
-- Testaremos cargas de trabalho para busca de palavras numa base de 29.870 palavras do dicionario Aurelio. 
+- Testaremos cargas de trabalho para busca de palavras num dicionario de 29.870 e 59.714 palavras. 
 As palavras pesquisadas usados como base estarão armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras)
 
 ### Performance de metricas
 - Acuracia/Similaridade
 
 ### Analise dos algoritmos
+Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base de palavra contendo 29.870 e 59714.
+
 | Algoritmo | Resultado |Similariade | Tempo Min. | Temp Max. | Base pal. |
 | -- | -- | -- | -- | -- | -- | 
 | Ratios | 5 | 90 | -- | -- | 29.870 |
