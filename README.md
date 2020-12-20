@@ -47,7 +47,7 @@ Onde | a | e | b | são os comprimentos da sequência uma e sequência b respect
 
 ### Carga para teste de algoritmo
 - Testaremos cargas de trabalho para busca de palavras numa base de 29.870 palavras do dicionario Aurelio. 
-Os arquivos usados no arquivo estarão armazenados no formato json conforme arquivo [Lista-de-Palavras.json] (Lista de Palavras)
+Os arquivos usados no arquivo estarão armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras)
 
 ### Performance de metricas
 - Testaremos uma acurácia minima de 95%
@@ -55,9 +55,6 @@ Os arquivos usados no arquivo estarão armazenados no formato json conforme arqu
 
 ### Analise dos algoritmos
 
-| **String de busca** | **Base de palavras**  | **Ratio** | **Acuracia** |
-| -- | -- | --- | --- |
-| ABACAXI|   |    |    |
 
 ### Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
