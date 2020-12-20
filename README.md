@@ -47,7 +47,7 @@ Onde | a | e | b | são os comprimentos da sequência uma e sequência b respect
 
 ### Carga para teste de algoritmo
 - Testaremos cargas de trabalho para busca de palavras num dicionario de 29.870 e 59.714 palavras. 
-As palavras pesquisadas usados como base estarão armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras)
+As palavras pesquisadas usarão como base palavras armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras)
 
 ### Performance de metricas
 - Acuracia/Similaridade
@@ -55,12 +55,12 @@ As palavras pesquisadas usados como base estarão armazenados no formato json co
 ### Analise dos algoritmos
 Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base de palavra contendo 29.870 e 59714.
 
-| Algoritmo | Passos |Similariade | Tempo Max.| Base pal. |
+| Algoritmo | Resultado |Similariade | Tempo Max.| Base pal. |
 | -- | -- | -- | -- | -- |
-| Ratios | -- | -- | -- | 29.870 |
-| Highest | -- | -- | -- | 29.870 |
-| Ratios | -- | -- | -- | 59.714 |
-| Highest | -- | -- | -- | 59.714 |
+| Ratios | 05 | 90% | 15.75 | 29.870 |
+| Highest | 01 | 90 | 15.39 | 29.870 |
+| Ratios | 05 | 90 | 31.44 | 59.714 |
+| Highest | 01 | 90 | 31.25 | 59.714 |
 
 
 
