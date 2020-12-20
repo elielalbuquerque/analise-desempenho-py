@@ -62,6 +62,9 @@ Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele cal
 | Ratios | 05 | 90 | 31.44 | 59.714 |
 | Highest | 01 | 90 | 31.25 | 59.714 |
 
+![alt text](grafico01.png)
+
+![alt text](grafico01.png)
 
 
 ### Conclusões
