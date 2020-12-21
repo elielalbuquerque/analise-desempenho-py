@@ -32,13 +32,12 @@ Com base numa string de dados informada pelo usuario numa aplicação console py
   - Importar biblioteca FuzzyWuzzy, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências e demais bibliotecas listadas no item pre-requisitos.
 
 ### Objetivo
-Comparar o desempenho enrte as funções Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio, presentes na biblioteca Fuzzywuzzy para resolver o problema de comparação de similaridade de duas strings com maior nível de assertividade.
+Comparar o desempenho entre as funções Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio, presentes na biblioteca Fuzzywuzzy, para resolver o problema de comparação de similaridade de duas strings com maior nível de similaridade. 
   
-# Analise de desempenho
-Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. 
-discutiremos sobre desempenho na comparação de strings sob dois aspectos Ratios e Heighest.
+# Análise de desempenho
+Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. Discutiremos sobre o desempenho sobre desempenho as quatro propostas de função presentes e implementada: Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio. 
 
-Mediremos o número mínimo de edições que você precisa fazer para alterar uma sequência de uma string na outra. A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
+A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
 Também é possível calcular a razão de similaridade com base na distância de Levenshtein. Isso pode ser feito usando a seguinte fórmula:
      
      (|a|+|b|)−leva,b(i,j)/|a|+|b)
