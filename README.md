@@ -53,7 +53,10 @@ As palavras pesquisadas usarão como base palavras armazenados no formato json c
 - Acuracia/Similaridade
 
 ### Analise dos algoritmos
-Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base de palavra contendo 29.870 e 59714.
+Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base contendo 29.857 e 167.192 palavra. 
+A string de referencia usada para produzir os dados abaixo foi:
+Opção1: ABACAXi - 29.857 palavras
+Opção2: abacaxi - 167.192 palavras
 
 | Algoritmo     | Dataset |Execução | Ratio Min.| Ratio Med. | Ratio Max. |  Dicionario |
 | --            | --      | --      | --        | --         | --         | --          |
@@ -61,11 +64,12 @@ Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele cal
 | Partial_Ratio | 29.857  | 11,10s  | 43        | 66         | 100        | PT_BR       | 
 | Token_Sort    | 29.857  | 3,61s   | 36        | 48,75      | 64         | PT_BR       |
 | Token_set     | 29.857  | 4,01s   | 36        | 57,75      | 100        | PT_BR       |
-| Ratio         | 167.192 | 15.71s  | 26        | 32,7       | 40         | PT_BR       |
-| Partial_Ratio | 167.192 | 50.89s  | 43        | 44,5       | 46         | PT_BR       | 
-| Token_Sort    | 167.192 | 21,26s  | 38        | 47,75      | 58         | PT_BR       |
-| Token_set     | 167.192 | 25.87s  | 38        | 53         | 100        | PT_BR       |
+| Ratio         | 167.192 | 12,49s  | 09        | 28,2       | 45         | PT_BR       |
+| Partial_Ratio | 167.192 | 33.71s  | 20        | 61         | 100        | PT_BR       | 
+| Token_Sort    | 167.192 | 24,14s  | 38        | 47,75      | 58         | PT_BR       |
+| Token_set     | 167.192 | 24,76s  | 38        | 53         | 100        | PT_BR       |
 
+Ratio uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências. No entanto, fuzzywuzzy tem funções mais poderosas que nos permitem lidar com situações mais complexas, como correspondência de substring. Aqui está um exemplo:
 
 ### Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
