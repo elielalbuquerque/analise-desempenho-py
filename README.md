@@ -55,12 +55,12 @@ As palavras pesquisadas usarão como base palavras armazenados no formato json c
 ### Analise dos algoritmos
 Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base de palavra contendo 29.870 e 59714.
 
-| Algoritmo | Resultado |Similariade %| Tempo Max.| Base pal. |
-| -- | -- | -- | -- | -- |
-| Ratios | 05 | 90 | 15.75 | 29.870 |
-| Highest | 01 | 90 | 15.39 | 29.870 |
-| Ratios | 05 | 90 | 31.44 | 59.714 |
-| Highest | 01 | 90 | 31.25 | 59.714 |
+| Algoritmo     | Dataset |Execução | Ratio Min.| Ratio Med. | Ratio Max. |  Dicionario |
+| --            | --      | --      | --        | --         | --         | --          |
+| Ratio         | 29.857  | 3,22s   | 21        | 31,16      | 48         | PT_BR       |
+| Partial_Ratio | 29.857  | 11,10s  | 43        | 66         | 100        | PT_BR       | 
+| Token_Sort    | 29.857  | 3,61s   | 36        | 48,75      | 64         | PT_BR       |
+| Token_set     | 29.857  | 4,01s   | 36        | 57,75      | 100        | PT_BR       |
 
 ![alt text](grafico01.png)
 
