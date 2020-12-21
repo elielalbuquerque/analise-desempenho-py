@@ -1,51 +1,77 @@
-import numpy as np
+from fuzzywuzzy import fuzz
+import matplotlib.pyplot as plt
+import json
+from statistics import mean
+import psutil
+import timeit
+inicio = timeit.default_timer()
 
 
-    def levenshtein_ratio_and_distance(s, t, ratio_calc = false):
-    # Initialize matrix of zeros
-      rows = len(s)+1
-      cols = len(t)+1
-      distance = np.zeros((rows,cols),dtype = int)
+path = "C:/Temp/Dicionario/Lista-de-Palavras.json"
 
-    # Populate matrix of zeros with the indeces of each character of both strings
-    for i in range(1, rows):
-        for k in range(1,cols):
-            distance[i][0] = i
-            distance[0][k] = k
-
-    # Iterate over the matrix to compute the cost of deletions,insertions and/or substitutions    
-    for col in range(1, cols):
-        for row in range(1, rows):
-            if s[row-1] == t[col-1]:
-                cost = 0 # If the characters are the same in the two strings in a given position [i,j] then the cost is 0
-            else:
-                # In order to align the results with those of the Python Levenshtein package, if we choose to calculate the ratio
-                # the cost of a substitution is 2. If we calculate just distance, then the cost of a substitution is 1.
-                if ratio_calc == True:
-                    cost = 2
-                else:
-                    cost = 1
-            distance[row][col] = min(distance[row-1][col] + 1,      # Cost of deletions
-                                 distance[row][col-1] + 1,          # Cost of insertions
-                                 distance[row-1][col-1] + cost)     # Cost of substitutions
-    if ratio_calc == True:
-        # Computation of the Levenshtein Distance Ratio
-        Ratio = ((len(s)+len(t)) - distance[row][col]) / (len(s)+len(t))
-        return Ratio
-    else:
-        # print(distance) # Uncomment if you want to see the matrix showing how the algorithm computes the cost of deletions,
-        # insertions and/or substitutions
-        # This is the minimum number of edits needed to convert string a to string b
-        return "The strings are {} edits away".format(distance[row][col])
+with open(path, 'r', encoding = "utf8") as j:
+    dt = json.load(j)
+str2Match = "abacaxi"
+strOptions = dt
+ratio = 0
+VETRATIO = []
+VETITENS = []
+VETthisRatio = []
+vetAcuracia = []
+vetAcuracia2 = []
+totalregistros = 0
+acuracia = 0
+vetpalavras = []
+for item in dt["DICIONARIO"]:
+    #thisRatio =  fuzz.ratio(str2Match,item)
+    #thisRatio =  fuzz.partial_ratio(str2Match,item)
+    #thisRatio =  fuzz.token_sort_ratio(str2Match,item)
+    thisRatio =  fuzz.token_set_ratio(str2Match,item)
+    
+    if thisRatio > ratio:
+        totalregistros += 1
+        VETRATIO.append(ratio)
+        VETthisRatio.append(thisRatio)
+        VETITENS.append(item)
+        ratio = thisRatio
+        vetpalavras.append(item['PALAVRA'])
+       
+fim = timeit.default_timer() 
 
 
-------------------------------------------------------------------------------------------------
-       Str1 = "Unisinos."
-       Str2 = "unisinos"
-       Distance = levenshtein_ratio_and_distance(Str1,Str2)
-       print(Distance)
-       Ratio = levenshtein_ratio_and_distance(Str1,Str2,ratio_calc = True)
-       print(Ratio)
-       The strings are 2 edits away
-       0.8421052631578947
-        
+# In[69]:
+print("min")
+print( min(VETthisRatio) )
+print("mean")
+print( mean(VETthisRatio) )
+print("max")
+print(max(VETthisRatio))
+strLen = len(dt["DICIONARIO"])
+print ('Total de Palavras: %.0f' % strLen)
+print ('Duracao calculo Ratios: %.2f' % (fim - inicio))
+
+
+
+plt.plot(VETRATIO,VETthisRatio)
+plt.ylabel('RATIOS')
+plt.xlabel('SIMILARIDADE')
+plt.show()
+
+
+# Este gráfico simula a participação dos 5 produtos agrícolas mais produzidos no Brasil
+
+# Definindo os produtos, que vão para o eixo X
+
+
+# Definindo as participações que formarão o eixo Y
+#palavras = ['A-BE-CE', 'A-TOA', 'ABA', 'ABACATE', 'ABACATEIRO', 'ABACAXI']
+
+# Semelhando ao bar() temos o barh()
+plt.barh(vetpalavras, VETthisRatio, color='green')
+
+# A partir daqui não muda nada
+plt.ylabel("Similaridade")
+plt.xlabel("fuzz.ratio")
+plt.title("Processamento fuzz.ratio")
+
+plt.show()
