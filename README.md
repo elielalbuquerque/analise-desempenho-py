@@ -74,5 +74,8 @@ Opção 2: **abacaxi** - 167.192 palavras
 
 Para executar a análise do algoritmo, execute Levensntein.py, ele calcula os passos médios e o tempo para resolver a similaridade de acordo com as opções 1 e opção 2 listadas em Análise de Algoritmo. Para cada função aplicamos os datasets X e Y, disponíveis nos links [Lista-de-Palavras.json](Lista de Palavras) e [Lista-de-Palavras2.json](Lista de Palavras), a saída desses cálculos estão na tabela acima.
 
-### Conclusões
+### Análise do resultado do Ratio
+Nos gráficos abaixo podemos ver que até o nível de similaridade 
+
+## Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
