@@ -51,9 +51,9 @@ Duas métricas foram escolhidas para analisar o desempenho de ambas as funções
 As palavras pesquisadas usarão como base palavras armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras) e [Lista-de-Palavras2.json](Lista de Palavras)
 
 ### Performance de metricas
-- Acuracia/Similaridade
+- Ratios/similaridade
 
-### Analise dos algoritmos
+### Análise dos algoritmos
 Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base contendo 29.857 e 167.192 palavra. 
 A string de referencia usada para produzir os dados abaixo foi:
 Opção1: ABACAXi - 29.857 palavras
