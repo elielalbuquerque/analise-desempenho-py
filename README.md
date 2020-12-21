@@ -25,14 +25,14 @@ O trabalho faz parte do programa de pós-graduação em Ciência da Computação
    - Statistics
 
 ## Instruções ao usuário
-A base de dados utilizada no projeto será em arquivo tipo JSON, um formato que armazena informações estruturadas e principalmente usado para transferir dados entre um servidor e um cliente. O arquivo e basicamente uma alternativa simples e mais leve ao XML (Extensive Markup Language), que tem funções similares. Desenvolvedores usam o JSON para trabalhar com AJAX (Asynchronous JavaScript and XML). A distância de Levenshtein é uma métrica para medir a distância entre duas sequencias de palavras. Em outras palavras, ele mede o número mínimo de edições que você precisa fazer para alterar uma sequência de uma palavra na outra. Essas edições podem ser inserções, exclusões ou substituições. Para regenerar testes e gráficos a partir de novas análises, execute o arquivo Levenshtein.py.
+A base de dados utilizada no projeto será em arquivo tipo JSON, um formato que armazena informações estruturadas e principalmente usado para transferir dados entre um servidor e um cliente. O arquivo e basicamente uma alternativa simples e mais leve ao XML (Extensive Markup Language), que tem funções similares. Desenvolvedores usam o JSON para trabalhar com AJAX (Asynchronous JavaScript and XML). A distância de Levenshtein é uma métrica para medir a distância entre duas sequencias de palavras. Em outras palavras, ele mede o número mínimo de edições que você precisa fazer para alterar uma sequência de uma palavra na outra. Essas edições podem ser inserções, exclusões ou substituições. Para regenerar testes e gráficos a partir de novas análises, execute o arquivo [Levenshtein.py](Algoritmo de Levenshtein).
 
 ## Cenário
-Com base numa string de dados informada pelo usuario numa aplicação Python, desejamos comparar a similaridade com informações armazenadas em uma base e trazer a informações que melhor representa com maior nível de acurácia.
-  - Importar biblioteca FuzzyWuzzy, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências.
+Com base numa string de dados informada pelo usuario numa aplicação console python, desejamos comparar a similaridade com palavras armazenadas em uma base e trazer a informações que melhor representa com maior nível de similaridade.
+  - Importar biblioteca FuzzyWuzzy, uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências e demais bibliotecas listadas no item pre-requisitos.
 
 ### Objetivo
-Comparar o desempenho de uma implementação do algoritmo de Levenshtein com uma biblioteca Fuzzywuzzy para resolver o problema de comparação de similaridade de duas strings com maior nível de assertividade.
+Comparar o desempenho enrte as funções Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio, presentes na biblioteca Fuzzywuzzy para resolver o problema de comparação de similaridade de duas strings com maior nível de assertividade.
   
 # Analise de desempenho
 Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. 
