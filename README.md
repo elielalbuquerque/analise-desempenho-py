@@ -83,3 +83,6 @@ Nos gráficos abaixo podemos ver os resultados efetuados com a função Token_Se
 
 ## Conclusões
 Neste documento foi exemplificado como a correspondência por aproximação de strings podem determinar os possiveis registros semelhante. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes. Podemos concluir que a função Token_Set_Ratios presente na biblioteca Fuzzywuzzy apresenta uma melhor performance em execução por similaridade.
+
+## Autores
+Christofer: christophertaz@gmail.com, Eliel Albuquerque: eliel.albuquerque@gmail.com, Robson Keemps: robson.keemps@gmail.com
