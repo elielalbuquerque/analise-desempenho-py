@@ -39,8 +39,9 @@ Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para
 A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
 
 ## Definição das métricas de desempenho
-1. Quantidade de edições por inserções, exclusões ou substituições.
-2. Percentual de similaridade.
+Duas métricas foram escolhidas para analisar o desempenho de ambas as funções. O primeiro é o tempo de execução, o segundo o numero de palavras de um dataset. 
+1. Tempo de execução
+2. Quantidade de registro no dataset
 
 ### Carga para teste de algoritmo
 - Testaremos cargas de trabalho para busca de palavras num dicionario de 29.870 e 59.714 palavras. 
