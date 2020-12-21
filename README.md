@@ -75,7 +75,7 @@ Opção 2: **abacaxi** - 167.192 palavras
 Para executar a análise do algoritmo, execute Levensntein.py, ele calcula os passos médios e o tempo para resolver a similaridade de acordo com as opções 1 e opção 2 listadas em Análise de Algoritmo. Para cada função aplicamos os datasets X e Y, disponíveis nos links [Lista-de-Palavras.json](Lista de Palavras) e [Lista-de-Palavras2.json](Lista de Palavras), a saída desses cálculos estão na tabela acima.
 
 ### Análise do resultado do Ratio
-Nos gráficos abaixo podemos ver que até o nível de similaridade 
+Nos gráficos abaixo podemos ver os resultados efetuados com a função Token_Set_Ratio onde é possivel visualizar os resultados obtidos pelos ratios em relação a similaridade realizada utilizado o dataset da opção 2. Os demais grafcos podem ser obtidos descomentando e executando as funções no Levenshtein.py.
 
 ![alt text](GRAFICO1.png)
 
