@@ -50,18 +50,10 @@ strLen = len(dt["DICIONARIO"])
 print ('Total de Palavras: %.0f' % strLen)
 print ('Duracao calculo Ratios: %.2f' % (fim - inicio))
 
-
-
 plt.plot(VETRATIO,VETthisRatio)
 plt.ylabel('RATIOS')
 plt.xlabel('SIMILARIDADE')
 plt.show()
-
-
-# Este gráfico simula a participação dos 5 produtos agrícolas mais produzidos no Brasil
-
-# Definindo os produtos, que vão para o eixo X
-
 
 # Definindo as participações que formarão o eixo Y
 #palavras = ['A-BE-CE', 'A-TOA', 'ABA', 'ABACATE', 'ABACATEIRO', 'ABACAXI']
