@@ -42,10 +42,13 @@ A técnica utilizada para avaliação será a de simulação usando como critér
 Duas métricas foram escolhidas para analisar o desempenho de ambas as funções. O primeiro é o tempo de execução, o segundo o numero de palavras de um dataset. 
 1. Tempo de execução
 2. Quantidade de registro no dataset
+3. Ratio (min)
+4. Ratio (med)
+5. Ratio (man)
 
 ### Carga para teste de algoritmo
-- Testaremos cargas de trabalho para busca de palavras num dicionario de 29.870 e 59.714 palavras. 
-As palavras pesquisadas usarão como base palavras armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras)
+- Testaremos cargas de trabalho para busca de palavras num dicionario de 29.857 e 167.192 palavras. 
+As palavras pesquisadas usarão como base palavras armazenados no formato json conforme arquivo [Lista-de-Palavras.json](Lista de Palavras) e [Lista-de-Palavras2.json](Lista de Palavras)
 
 ### Performance de metricas
 - Acuracia/Similaridade
