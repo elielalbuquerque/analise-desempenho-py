@@ -57,9 +57,9 @@ As palavras pesquisadas usarão como base palavras armazenados no formato json c
 Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base contendo 29.857 e 167.192 palavra. 
 A string de referência usada para produzir os dados abaixo foi:
 
-Opção1: ABACAXi - 29.857 palavras
+Opção1: **ABACAXi** - 29.857 palavras
 
-Opção2: abacaxi - 167.192 palavras
+Opção2: **abacaxi** - 167.192 palavras
 
 | Algoritmo     | Dataset |Execução | Ratio Min.| Ratio Med. | Ratio Max. |  Dicionario |
 | --            | --      | --      | --        | --         | --         | --          |
