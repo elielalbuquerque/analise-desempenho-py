@@ -35,14 +35,8 @@ Com base numa string de dados informada pelo usuario numa aplicação console py
 Comparar o desempenho entre as funções Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio, presentes na biblioteca Fuzzywuzzy, para resolver o problema de comparação de similaridade de duas strings com maior nível de similaridade. 
   
 # Análise de desempenho
-Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. Discutiremos sobre o desempenho sobre desempenho as quatro propostas de função presentes e implementada: Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio. 
-
+Nesta seção iremos avaliar o desempenho de nossas propostas de algoritmos para resolver o SE codificado aqui. Discutiremos sobre o desempenho das quatro propostas de funções presentes e implementadas: Ratios, Partial_Ratio, Token_Sort_Ratio, Token_Set_Ratio. 
 A técnica utilizada para avaliação será a de simulação usando como critério a precisão para comparação.
-Também é possível calcular a razão de similaridade com base na distância de Levenshtein. Isso pode ser feito usando a seguinte fórmula:
-     
-     (|a|+|b|)−leva,b(i,j)/|a|+|b)
-     
-Onde | a | e | b | são os comprimentos da sequência uma e sequência b respectivamente.
 
 ## Definição das métricas de desempenho
 1. Quantidade de edições por inserções, exclusões ou substituições.
