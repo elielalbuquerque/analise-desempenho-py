@@ -1,7 +1,7 @@
-# Analise-desempenho-py
+# Análise-desempenho-py
 O trabalho faz parte do programa de pós-graduação em Ciência da Computação da Unisinos. Aqui você pode encontrar a avaliação de um sistema especialista (SE), utilizando de algoritmos que façam pesquisa de string difusa, combinação de strings difusas é a técnica de encontrar strings que correspondam aproximadamente a um padrão (em vez de exatamente). Em outra palavra, a correspondência de string difusa é um tipo de pesquisa que encontrará correspondências mesmo quando os usuários digitarem palavras incorretamente ou inserirem apenas palavras parciais para a pesquisa. Também é conhecido como correspondência aproximada de strings. Aqui você encontrará uma abordagem para resolução do problema usando algoritmo de Levenshtein frequentemente utilizado para calcular a distância entre duas strings.
 
-## Indice
+## Índice
 - Pré-requisitos
 - Instruções ao usuário
 - Cenário
