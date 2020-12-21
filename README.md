@@ -77,5 +77,9 @@ Para executar a análise do algoritmo, execute Levensntein.py, ele calcula os pa
 ### Análise do resultado do Ratio
 Nos gráficos abaixo podemos ver que até o nível de similaridade 
 
+![alt text](GRAFICO1.png)
+
+![alt text](GRAFICO1.png)
+
 ## Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
