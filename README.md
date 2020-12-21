@@ -61,10 +61,10 @@ Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele cal
 | Partial_Ratio | 29.857  | 11,10s  | 43        | 66         | 100        | PT_BR       | 
 | Token_Sort    | 29.857  | 3,61s   | 36        | 48,75      | 64         | PT_BR       |
 | Token_set     | 29.857  | 4,01s   | 36        | 57,75      | 100        | PT_BR       |
-
-![alt text](grafico01.png)
-
-![alt text](grafico02.png)
+| Ratio         | 167.192 | 15.71s  | 26        | 32,7       | 40         | PT_BR       |
+| Partial_Ratio | 167.192 | 50.89s  | 43        | 44,5       | 46         | PT_BR       | 
+| Token_Sort    | 167.192 | 21,26s  | 38        | 47,75      | 58         | PT_BR       |
+| Token_set     | 167.192 | 25.87s  | 38        | 53         | 100        | PT_BR       |
 
 
 ### Conclusões
