@@ -57,9 +57,9 @@ As palavras pesquisadas usarão como base palavras armazenados no formato json c
 Para executar a análise de ambos os algoritmos, execute Levenshtein.py, ele calcula a similaridade da string informada e o tempo para encontrar na base contendo 29.857 e 167.192 palavra. 
 A string de referência usada para produzir os dados abaixo foi:
 
-Opção1: **ABACAXi** - 29.857 palavras
+Opção 1: **ABACAXI** - 29.857 palavras
 
-Opção2: **abacaxi** - 167.192 palavras
+Opção 2: **abacaxi** - 167.192 palavras
 
 | Algoritmo     | Dataset |Execução | Ratio Min.| Ratio Med. | Ratio Max. |  Dicionario |
 | --            | --      | --      | --        | --         | --         | --          |
@@ -72,7 +72,7 @@ Opção2: **abacaxi** - 167.192 palavras
 | Token_Sort    | 167.192 | 24,14s  | 38        | 47,75      | 58         | PT_BR       |
 | Token_set     | 167.192 | 24,76s  | 38        | 53         | 100        | PT_BR       |
 
-Ratio uma função de razão que calcula a razão de similaridade de distância de Levenshtein padrão entre duas sequências. No entanto, fuzzywuzzy tem funções mais poderosas que nos permitem lidar com situações mais complexas, como correspondência de substring. Aqui está um exemplo:
+Para executar a análise do algoritmo, execute Levensntein.py, ele calcula os passos médios e o tempo para resolver a similaridade de acordo com as opções 1 e opção 2 listadas em Análise de Algoritmo. Para cada função aplicamos os datasets X e Y, disponíveis nos links [Lista-de-Palavras.json](Lista de Palavras) e [Lista-de-Palavras2.json](Lista de Palavras), a saída desses cálculos estão na tabela acima.
 
 ### Conclusões
 Neste documento foi exemplificado como a correspondência por aproximada de strings e determinar o quão semelhante são. Os exemplos apresentados aqui podem ser simples, mas são suficientes para ilustrar como lidar com vários casos do que um computador pensa serem strings incompatíveis através da correspondência de string difusa para mapear correspondentes a pesquisa de um sistema de turismo para recomendação. No entanto, a utilidade desta técnica pode ser expandida, não há limites para usos da correspondência difusa. Este trabalho tem como objetivo demostrar os resultados de performance e acurácia comparando dois algoritmos distintos com o mesmo objetivo de comparar a similaridade entre palavras informadas com uma base de dados existentes.
