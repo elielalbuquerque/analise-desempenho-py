@@ -44,7 +44,7 @@ Duas métricas foram escolhidas para analisar o desempenho de ambas as funções
 2. Quantidade de registro no dataset
 3. Ratio (min)
 4. Ratio (med)
-5. Ratio (man)
+5. Ratio (max)
 
 ### Carga para teste de algoritmo
 - Testaremos cargas de trabalho para busca de palavras num dicionario de 29.857 e 167.192 palavras. 
